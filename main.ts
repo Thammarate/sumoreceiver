@@ -38,19 +38,10 @@ basic.showString("R")
 basic.forever(function () {
     if (action == "A") {
         comment.comment("Insert A-Button Action Between These Comments")
-        wuKong.setAllMotor(20, 100)
-        basic.pause(100)
-        wuKong.setAllMotor(100, 20)
-        basic.pause(100)
-        wuKong.setAllMotor(20, 100)
-        basic.pause(100)
-        wuKong.setAllMotor(100, 20)
-        wuKong.stopAllMotor()
         comment.comment("Insert A-Button Action Between These Comments")
         action = "Z"
     } else if (action == "B") {
         comment.comment("Insert B-Button Action Between These Comments")
-        wuKong.setAllMotor(500, 500)
         comment.comment("Insert B-Button Action Between These Comments")
         action = "Z"
     } else if (action == "AB") {
@@ -59,6 +50,15 @@ basic.forever(function () {
         action = "Z"
     } else if (action == "C") {
         comment.comment("Insert C-Button Action Between These Comments")
+        wuKong.setAllMotor(10, 100)
+        basic.pause(100)
+        wuKong.setAllMotor(100, 10)
+        basic.pause(100)
+        wuKong.setAllMotor(10, 100)
+        basic.pause(100)
+        wuKong.setAllMotor(100, 10)
+        basic.pause(100)
+        wuKong.stopAllMotor()
         comment.comment("Insert C-Button Action Between These Comments")
         action = "Z"
     } else if (action == "D") {
@@ -73,6 +73,7 @@ basic.forever(function () {
         action = "Z"
     } else if (action == "F") {
         comment.comment("Insert F-Button Action Between These Comments")
+        wuKong.setAllMotor(100, 100)
         comment.comment("Insert F-Button Action Between These Comments")
         action = "Z"
     } else {
